@@ -1,13 +1,13 @@
 @import '../../../sass/variable.scss';
 
 .header{
-    height:5rem ;
+    height:8vh;
     background-color:#42525a;
     width: 100%;
     
     
     &__logo{
-        margin-left:10%;
+        margin-left:3%;
         
     }
 
@@ -17,7 +17,7 @@
     }
     &__profile{
         
-        margin-left: 40%;
+        margin-right: 10%;
 
         &-img-{
             display: inline-block;

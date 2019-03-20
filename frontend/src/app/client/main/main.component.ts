@@ -8,7 +8,10 @@ import { Component, OnInit } from '@angular/core';
 export class MainComponent implements OnInit {
 
   constructor() { }
-
+  showNav:boolean =true;
+  show(){
+    this.showNav = ! this.showNav ; 
+  }
   ngOnInit() {
   }
 
