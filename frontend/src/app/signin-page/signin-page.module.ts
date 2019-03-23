@@ -3,6 +3,9 @@ import { CommonModule } from '@angular/common';
 import { SigninComponent } from './signin/signin.component'; 
 // import { LandingpageModule } from '../landingpage/landingpage.module';
 import { FooterModule } from '../shared/modules/footer.module';
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+import { SigninAuthService } from './auth/signin-auth.service';
 
 
 @NgModule({
@@ -10,8 +13,11 @@ import { FooterModule } from '../shared/modules/footer.module';
 
   imports: [
     CommonModule
-    ,FooterModule
+    ,FooterModule,
+    FormsModule,
+    HttpClientModule 
       
-  ]
+  ] , 
+  providers:[SigninAuthService]
 })
 export class SigninPageModule { }

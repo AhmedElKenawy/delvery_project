@@ -6,14 +6,16 @@
     <main >
       <div class="container">
           <div class="row justify-content-center align-items-center">
-            <form > 
+            <form (ngSubmit)="onSignin(f)" #f="ngForm" > 
               <div class="form">    
               <div class="form__group">
-                <input type="email" class=" form__input" id="emailAddress" aria-describedby="emailHelp" placeholder="Email Address" required>
+                <input type="email" class=" form__input" id="email" name="email"
+                aria-describedby="emailHelp" placeholder="Email Address" required ngModel>
                 <label   for="emailAddress" class="form__lable" > Email address </label> 
               </div>
               <div class="form__group">
-                <input type="password" class="form__input" id="Password" placeholder="Password" required>
+                <input type="password" class="form__input" id="Password" 
+                placeholder="Password" name="password" required ngModel>
                 <label   for="Password" class="form__lable" > Password</label>
               </div>
               
